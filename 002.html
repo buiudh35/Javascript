@@ -4,21 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: yellowgreen;
+        }
+
+        p {
+            color: aliceblue;
+            text-align: justify;
+        }
+
+        button {
+            margin: 0 auto;
+            display: block;
+            color: black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Programando em Javascript</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ex dignissimos, adipisci accusantium blanditiis facilis commodi magnam soluta animi in nesciunt modi temporibus earum consequatur? Perspiciatis id at possimus laudantium!</p>
+    <button>Pressione-me</button>
     <script>
-        /* 
-        Identificadores:
-        Podem começar com letra, $ ou _
-        Não podem começar com números
-        É possível usar letras ou números
-        É possível usar acentos e símbolos
-        Não podem conter espaços
-        Não podem ser palavras reservadas
-        */
-
-        
+        var button = document.querySelector('button');
+        button.onclick = function() {
+            var nome = prompt('Qual é o seu nome?');
+            alert('Olá ' + nome + ', prazer em conhecê-lo!');
+        }
     </script>
 </body>
 </html>
