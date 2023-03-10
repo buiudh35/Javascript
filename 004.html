@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros Comandos</title>
+    <title>Document</title>
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+
         body {
             background-color: cadetblue;
             width: 600px;
@@ -14,6 +19,7 @@
 
         h1 {
             color: yellowgreen;
+            font-size: 1.5em;
         }
 
         p {
@@ -26,10 +32,13 @@
     <h1>Programando em Javascript</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ex dignissimos, adipisci accusantium blanditiis facilis commodi magnam soluta animi in nesciunt modi temporibus earum consequatur? Perspiciatis id at possimus laudantium!</p>
     <script>
-        alert('Bem vindo(a) ao meu primeiro codigo em Javascript'); 
-        confirm('Deseja continuar sua navegação?');
-        prompt('Qual o seu nome?');
-        document.write('Foi estudado nesse exercício 3 comandos básicos, alert, confirm e prompt.')
+        var nome = prompt('Qual é o seu nome?');
+        var idade = prompt('Qual é a sua idade?');
+        var sexo = prompt('Qual é o seu sexo?');
+        document.write(`Seu nome é <strong>${nome}</strong> e você tem <strong>${idade}</strong> anos e seu sexo é <strong>${sexo}</strong>. </br>`);
+        document.write(`Seu nome possui ${nome.length()} letras </br>`);
+        document.write(`Seu nome em MAIÚSCULAS fica assim: ${nome.toUpperCase()} </br>`);
+        document.write(`Seu nome em minusculas fica assim: ${nome.toLowerCase()}`);
     </script>
 </body>
 </html>

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.1em;
+        }
+
         body {
             background-color: cadetblue;
             width: 600px;
@@ -14,6 +19,7 @@
 
         h1 {
             color: yellowgreen;
+            font-size: 1.5em;
         }
 
         p {
@@ -26,7 +32,11 @@
     <h1>Programando em Javascript</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ex dignissimos, adipisci accusantium blanditiis facilis commodi magnam soluta animi in nesciunt modi temporibus earum consequatur? Perspiciatis id at possimus laudantium!</p>
     <script>
-        
+        var numero1 = Number(prompt('Digite o primeiro número: '));
+        var numero2 = Number(prompt('Digite o segundo número: '));
+        var resultado = numero1 + numero2;
+        alert(`A soma dos números ${numero1} e ${numero2} é ` + resultado);
+        document.write('Foi estudado neste exercício, variaveis, conversão de strings para numeros e templante strings um tipo de formatação de string.');
     </script>
 </body>
 </html>
